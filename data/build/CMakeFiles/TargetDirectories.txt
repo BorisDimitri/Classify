@@ -1,0 +1,3 @@
+/home/boris/code/Classify/data/build/CMakeFiles/rebuild_cache.dir
+/home/boris/code/Classify/data/build/CMakeFiles/edit_cache.dir
+/home/boris/code/Classify/data/build/CMakeFiles/Video2jpg.dir
