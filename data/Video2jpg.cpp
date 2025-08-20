@@ -6,7 +6,7 @@
 using namespace cv;
 
 std::string ObjectName = "mouse";
-std::string pat = fmt::format("./{}.mp4",ObjectName);
+std::string pat = fmt::format("./video/{}.mp4",ObjectName);
 
 int main()
 {
@@ -24,14 +24,12 @@ int main()
     for(int i = 0;i < num-1;i ++)
     {
         video.read(frame);
-        imshow("test",frame);
-        imwrite(fmt::format("./{}/{}.jpg",ObjectName,i),frame);
+        // imshow("test",frame);
+        imwrite(fmt::format("./img/{}/{}.jpg",ObjectName,i),frame);
 
-        if(waitKey(30) == 'q') break;
+        // if(waitKey(30) == 'q') break;
     }
 
-    // 释放资源
-    destroyWindow("test"); // 销毁窗口
     video.release(); // 释放对象
 
     return 0;
